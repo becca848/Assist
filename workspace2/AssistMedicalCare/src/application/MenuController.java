@@ -129,6 +129,7 @@ public class MenuController implements Initializable{
 	
 	public Integer setPatient() {
 		Integer nhs = 0;
+		if(nhs.)
 		nhs = selectPatientController.nhsNo;
 		System.out.println("nhs from menu " + nhs);
 		return nhs;
