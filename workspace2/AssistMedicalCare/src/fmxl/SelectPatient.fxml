@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="394.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SelectPatientController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="370.0" prefWidth="756.0">
+               <children>
+                  <HBox prefHeight="70.0" prefWidth="736.0">
+                     <children>
+                        <Label text="Assist Medical Care ">
+                           <font>
+                              <Font size="46.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="25.0" prefWidth="756.0" spacing="20.0">
+                     <children>
+                        <Label text="Forename" />
+                        <TextField fx:id="forename" />
+                        <Label text="Surname" />
+                        <TextField fx:id="surname" />
+                        <Button fx:id="Search" mnemonicParsing="false" onAction="#HandleSearch" text="Search" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <TableView fx:id="TableView1" prefHeight="240.0" prefWidth="756.0" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="selectButton" mnemonicParsing="false" text="Select" />
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin></AnchorPane>
+   </center>
+   <bottom>
+      <Pane prefHeight="23.0" prefWidth="756.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

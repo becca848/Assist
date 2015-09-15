@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="438.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+   <top>
+      <Label text="Dashboard" BorderPane.alignment="CENTER_LEFT">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <Pane prefHeight="26.0" prefWidth="635.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <VBox id="Column" alignment="CENTER_RIGHT" prefHeight="442.0" prefWidth="687.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="102.0" prefWidth="134.0" />
+            <HBox id="Row1" alignment="CENTER_RIGHT" depthTest="ENABLE" prefHeight="0.0" prefWidth="399.0">
+               <children>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="143.0">
+                     <children>
+                        <Label fx:id="Symptom1" prefHeight="17.0" prefWidth="145.0" text="symptom 1">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="data" text="Label" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" opacity="0.5" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle1" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape1" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" opacity="0.7" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle12" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape12" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle13" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape13" arcHeight="5.0" arcWidth="5.0" disable="true" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor></Rectangle>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox id="Row2" alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="587.0">
+               <children>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="120.0">
+                     <children>
+                        <Label id="symptom2" fx:id="Symptom2" prefHeight="17.0" prefWidth="120.0" text="symptom 2">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="data2" text="Label" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle2" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape2" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" opacity="0.66" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle22" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape22" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" opacity="0.34" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle23" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape23" arcHeight="5.0" arcWidth="5.0" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox id="Row3" alignment="CENTER_RIGHT" prefHeight="11.0" prefWidth="580.0">
+               <children>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="120.0">
+                     <children>
+                        <Label fx:id="Symptom3" text="symptom 3">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="data3" text="Label" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" opacity="0.7" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle3" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape3" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle32" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape32" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" opacity="0.34" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle33" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape33" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox id="Row4" alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="520.0">
+               <children>
+                  <VBox maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="120.0">
+                     <children>
+                        <Label fx:id="Symptom4" text="symptom 4">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="data4" text="Label" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" opacity="0.7" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle4" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape4" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle42" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape42" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" opacity="0.34" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle43" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape43" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox id="Row5" alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="540.0">
+               <children>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="119.0">
+                     <children>
+                        <Label fx:id="Symptom5" prefHeight="17.0" prefWidth="187.0" text="symptom5">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="data5" text="Label" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" opacity="0.5" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle5" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape5" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" opacity="0.7" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle52" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape52" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Circle fx:id="circle53" fill="#5a5a5b" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle fx:id="shape53" arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="3.0" stroke="BLACK" strokeType="INSIDE" width="523.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="51.0" prefWidth="550.0">
+               <children>
+                  <VBox prefHeight="51.0" prefWidth="540.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="687.0">
+                           <children>
+                              <Label fx:id="day" prefHeight="17.0" prefWidth="546.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="687.0">
+                           <children>
+                              <Label fx:id="month" prefHeight="17.0" prefWidth="566.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="687.0">
+                           <children>
+                              <Label fx:id="year" prefHeight="17.0" prefWidth="545.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <left>
+      <StackPane prefHeight="329.0" prefWidth="33.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="284.0" prefWidth="160.0" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="160.0" spacing="10.0" />
+            <VBox alignment="CENTER_LEFT" prefHeight="17.0" prefWidth="160.0">
+               <children>
+                  <Label id="ilness" fx:id="illness">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="percentage" />
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="24.0">
+               <children>
+                  <Label fx:id="condition1">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="condition">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="condition2">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+               <effect>
+                  <ColorInput>
+                     <paint>
+                        <LinearGradient endX="0.7476190476190476" endY="0.7619047619047619" startX="0.7285714285714286" startY="1.0">
+                           <stops>
+                              <Stop color="WHITE" />
+                              <Stop color="#aba4a4" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </paint>
+                  </ColorInput>
+               </effect>
+            </VBox>
+            <Circle fx:id="ColonCircle" fill="DODGERBLUE" radius="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <HBox prefHeight="60.0" prefWidth="160.0" />
+            <VBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="160.0">
+               <children>
+                  <Label fx:id="illness1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="percentage1" />
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </VBox>
+            <Label fx:id="condition3" />
+            <Circle fx:id="lungCircle" fill="DODGERBLUE" radius="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
