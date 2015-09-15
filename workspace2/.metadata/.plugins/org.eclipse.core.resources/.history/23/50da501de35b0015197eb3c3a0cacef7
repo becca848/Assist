@@ -38,8 +38,7 @@ public class MenuController {
 	private SelectPatientController selectPatientController;
 	
 	@FXML public void initialize() {
-		//selectPatientController.getDetails(this);
-		setPatient();
+		selectPatientController.getDetails(this);
 	}
 	
 	@FXML
@@ -131,6 +130,7 @@ public class MenuController {
 	public void setPatient() {
 		Integer nhs = selectPatientController.selectPatient();
 		System.out.println("nhs from menu " + nhs);
+		
 	}
 
 }

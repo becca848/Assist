@@ -35,14 +35,6 @@ public class MenuController {
 	private Button SelectPatient;
 	
 	@FXML
-	private SelectPatientController selectPatientController;
-	
-	@FXML public void initialize() {
-		//selectPatientController.getDetails(this);
-		setPatient();
-	}
-	
-	@FXML
 	private void HandleSelectPatient() {
 		Parent root = null;
 		try {
@@ -126,11 +118,6 @@ public class MenuController {
 		e.printStackTrace();
 	}
 	
-	}
-
-	public void setPatient() {
-		Integer nhs = selectPatientController.selectPatient();
-		System.out.println("nhs from menu " + nhs);
 	}
 
 }

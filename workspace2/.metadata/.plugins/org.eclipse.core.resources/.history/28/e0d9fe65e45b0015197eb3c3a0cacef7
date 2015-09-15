@@ -39,7 +39,6 @@ public class MenuController {
 	
 	@FXML public void initialize() {
 		//selectPatientController.getDetails(this);
-		setPatient();
 	}
 	
 	@FXML

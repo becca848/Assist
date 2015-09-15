@@ -94,10 +94,6 @@ public class SelectPatientController implements Initializable {
 				SurnameColumn, YearColumn, StreetNumberColumn, AddressColumn,
 				PostcodeColumn, SexColumn);
 	}
-	
-	public void getDetails(MenuController menuController) {
-		menu = menuController;
-	}
 
 
 	 public Integer selectPatient() {
@@ -179,6 +175,12 @@ public class SelectPatientController implements Initializable {
 			exc.printStackTrace();
 		}
 		return patients;
+	}
+
+
+	public void getDetails(MenuController menuController) {
+		menu = menuController;
+		
 	}
 
 }
