@@ -126,22 +126,18 @@ public class MenuController implements Initializable{
 	}
 	
 	}
-	
+
 	public Integer setPatient() {
-		Integer nhs = 0;
-		nhs = selectPatientController.nhsNo;
+		Integer nhs = selectPatientController.nhsNo;
 		System.out.println("nhs from menu " + nhs);
 		return nhs;
 	}
-	
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		//selectPatientController.getDetails(this);
-		setPatient();
-		//Integer nhs = 0;
-		//nhs = selectPatientController.nhsNo;
-		//System.out.println("nhs from menu " + nhs);
+		selectPatientController.getDetails(this);
+		//setPatient();
+		
 	}
 
 }

@@ -43,8 +43,6 @@ public class SelectPatientController implements Initializable {
 	@FXML
 	private MenuController menu;
 	
-	public Integer nhsNo = 0;
-	
 	private ObservableList<Patient> patients = FXCollections.observableArrayList();
 	
 	private static final String USER = "40062952";
@@ -102,19 +100,18 @@ public class SelectPatientController implements Initializable {
 		menu = menuController;
 	}
 
-	
-	 public void selectPatient() {
+
+	 public Integer selectPatient() {
 		 ObservableList<Patient> patientSelected;
 			patientSelected = TableView1.getSelectionModel().getSelectedItems();
-			nhsNo = patientSelected.get(0).getNHSNumber();
+			Integer nhsNo = patientSelected.get(0).getNHSNumber();
 			nhsNo.toString();
 			System.out.println(nhsNo);
 			//main.setTab2LabelText(txt1.getText());
 			//menu.setPatient(nhsNo);
-			//return nhsNo;
+			return nhsNo;
 			
 	}
-	
 
 
 	public ObservableList<Patient> GetPatient() {

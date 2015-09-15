@@ -1,12 +1,9 @@
 package application;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -18,7 +15,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import application.SelectPatientController;
 
-public class MenuController implements Initializable{
+public class MenuController {
 
 	@FXML
 	private Button bellButton;
@@ -40,6 +37,11 @@ public class MenuController implements Initializable{
 	
 	@FXML
 	private SelectPatientController selectPatientController;
+	
+	@FXML public void initialize() {
+		selectPatientController.getDetails(this);
+		//setPatient();
+	}
 	
 	@FXML
 	private void HandleSelectPatient() {
@@ -126,22 +128,10 @@ public class MenuController implements Initializable{
 	}
 	
 	}
-	
-	public Integer setPatient() {
-		Integer nhs = 0;
-		nhs = selectPatientController.nhsNo;
-		System.out.println("nhs from menu " + nhs);
-		return nhs;
-	}
-	
 
-	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
-		//selectPatientController.getDetails(this);
-		setPatient();
-		//Integer nhs = 0;
-		//nhs = selectPatientController.nhsNo;
-		//System.out.println("nhs from menu " + nhs);
+	public void setPatient() {
+		Integer nhs = selectPatientController.selectPatient();
+		System.out.println("nhs from menu " + nhs);
 	}
 
 }
